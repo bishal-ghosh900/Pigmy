@@ -37,6 +37,10 @@ header {
   background-color: darkslategrey;
 }
 
+#url-field::placeholder {
+  color: lightseagreen;
+}
+
 #url-field:focus {
   border: solid cyan;
   border-radius: 10px;
@@ -52,7 +56,30 @@ header {
 }
 
 #result {
-  padding: 2vw 0 0 0;
-  cursor: default;
-  font-size: 1.2rem;
+  width: 50%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid cyan;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1.1rem;
+  word-wrap: break-word;
+  text-align: center;
+  position: relative;
+}
+
+#copy {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px;
+  border-left: solid cyan;
+  border-bottom: solid cyan;
+}
+
+@media screen and (max-width: 500px) {
+  #result {
+    width: 80%;
+  }
 }
